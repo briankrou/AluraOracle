@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+    var ganados=3;
+    var perdidos=0;
+    var empatados=1;
+    var totalEmpatados,totalPerdidos,totalGanados,total,totalJugados,g,ig,p,ip,e,ie;
+
+    function imprimir (mensaje){
+        document.write(mensaje);
+        document.write("<br>");
+        
+    }
+    function datos(){
+        nombre=  window.prompt("nombre del equipo")
+        g=  parseInt(window.prompt("partidos ganados")) 
+        p=  parseInt( window.prompt("partidos perdidos")); 
+        e = parseInt(window.prompt("partidos empatados"));   
+ 
+    }
+    function calcularPuntuacion(ig,ie,ip,nombre){
+            
+            totalGanados=(ganados*ig)
+            totalEmpatados=(empatados*ie)
+            totalPerdidos=(perdidos*ip);
+            totalJugados=(ie+ip+ig);
+            total=(totalEmpatados+totalPerdidos+totalGanados);
+            imprimir("el equipo "+nombre);
+            imprimir("Total partidos ganados    = "+g+" total puntos = "+totalGanados);
+            imprimir("Total partidos perdios    = "+p+" total puntos = "+totalPerdidos);
+            imprimir("Total partidos empatados  = "+e+" total puntos = "+totalEmpatados);
+            imprimir("Total partidos jugados    = "+totalJugados+" total de puntos= "+total)
+    }
+
+    datos()
+    calcularPuntuacion(g,e,p,nombre)
+
+</script>
