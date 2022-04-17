@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital@1&family=PT+Sans:ital@1&display=swap" rel="stylesheet"> 
+
+    <title>Bouna Vista Nutrición</title>
+</head>
+<body>
+    <header>
+        <h2 class="titulo alineacion">Buona Vita Nutrición</h2>
+    </header>
+    <nav class="alineacion">
+        <h1>Mis pacientes</h1>
+        <hr>  
+        <br>
+    </nav>
+    <main class="alineacion">
+        <table>
+            <thead>
+                <tr>
+                    <td>Nombre</td>
+                    <td>Peso(kg)</td>
+                    <td>Altura(m)</td>
+                    <td>Gordura Corporal(%)</td>
+                    <td>IMC</td>
+                </tr>
+            </thead>
+            <Tbody id="tabla-pacientes">
+                
+                <tr class="paciente" id="n1">
+                    <td class="info-nombre">Pablo</td>
+                    <td class="info-peso">1000</td>
+                    <td class="info-altura">2.00</td>
+                    <td class="info-gordura">10</td>
+                    <td class="info-imc">0</td>
+                </tr>
+                <tr class="paciente" id="n2">
+                    <td class="info-nombre">Juan</td>
+                    <td class="info-peso">80</td>
+                    <td class="info-altura">3</td>
+                    <td class="info-gordura">40</td>
+                    <td class="info-imc">0</td>
+                </tr>
+                
+                <tr class="paciente" id="n3">
+                    <td class="info-nombre">Erica</td>
+                    <td class="info-peso">54</td>
+                    <td class="info-altura">1.64</td>
+                    <td class="info-gordura">14</td>
+                    <td class="info-imc">0</td>
+                </tr>
+                
+                <tr class="paciente" id="n4">
+                    <td class="info-nombre">Diego</td>
+                    <td class="info-peso">85</td>
+                    <td class="info-altura">1.73</td>
+                    <td class="info-gordura">24</td>
+                    <td class="info-imc">0</td>
+                </tr>
+                
+                <tr class="paciente" id="n5">
+                    <td class="info-nombre">Tatiana</td>
+                    <td class="info-peso">45</td>
+                    <td class="info-altura">1.55</td>
+                    <td class="info-gordura">19</td>
+                    <td class="info-imc">0</td>
+                </tr>
+            </Tbody>
+        </table>
+
+        <h2>Adicionar nuevo paciente</h2>
+        <hr>
+
+        <div class="contenedorFormulario">
+            <form id="form-Adicoonar">
+                <div class="grupo">
+                    <label for="nombre" >Nombre</label>
+                    <input id="nombre" type="text" placeholder="digite el nombre del paciente" required>
+                </div>   
+                <div class="grupo">
+                    <label for="peso">Peso</label>
+                    <input id="peso" type="tel" placeholder="digite el peso del paciente" required>
+                    
+                </div class="grupo" >
+                <div>
+                    <label for="altura">Altura</label>
+                    <input id="altura" type="tel" placeholder="digite la altura del paciente" required>
+                </div>    
+                <div class="grupo">
+                    <label for="gordura">%de Gordura</label>
+                    <input  id="gordura" type="tel" placeholder="digite el porcentaje de gordura del paciente" required>
+                </div>
+                    
+
+                <button class="boton bto-principal" id="botonAgregarPaciente" >Agregar</button>
+      
+            </form>
+        </div>
+    </main>
+    <script type="text/javascript" src="./JS/calcular-Imc.js"></script>
+    <script type="text/javascript" src="./JS/agregarAlForm.js"></script>
+</body>
+</html>

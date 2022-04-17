@@ -1,0 +1,85 @@
+:root{
+    --fuente: 'Montserrat', sans-serif;
+}
+html{
+    font-family: var(--fuente);
+}
+header h1{
+    margin: 0;
+
+}
+.alineacion{
+    width: 70%;
+    margin: auto;
+}
+header{
+    background-color: black;
+    color: aliceblue;
+    line-height: 3rem;
+}
+/*tabla*/
+table{
+    width: 100%;
+    border-collapse:collapse;
+    line-height: 2rem;
+    text-align: center;
+}
+thead{
+    font-weight: 800;
+    font-size: 18px;
+    background-color: rgb(212, 209, 209);
+}
+td{
+    
+    max-width: 40px;
+    border: solid 1px black;;
+}
+/*formulario*/
+
+.contenedorFormulario{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedorFormulario form{
+    width: 70%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contenedorFormulario input{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 18rem;
+}
+.contenedorFormulario label{
+    margin-left: 0.7rem;
+}
+.contenedorFormulario button{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 6px;
+    grid-column: 1;
+    padding: 8px;
+    margin: 3px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
+    border: none;
+}
+.contenedorFormulario button:hover{
+    transform:scale(1.00005);
+    -webkit-transform:scale(1.00005);
+    -moz-transform:scale(1.00005);
+    -ms-transform:scale(1.00005);
+    -o-transform:scale(1.00005);
+    box-shadow: 0 0 3px 1px black;
+
+}
+
+/*clase de java*/
+.error{
+    background-color: rgba(245, 19, 19, 0.377);
+}
