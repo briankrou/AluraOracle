@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+    var contrseñaBase=12345;
+    var nombreUsuarioBase="brayan";
+    var contrseñain;
+    var nombreUsuarioin;
+    var intentos=3;
+    
+   for(var i=0;i<intentos;i++){
+        nombreUsuarioin = prompt("Usuario: ");
+        contrseñain = prompt("Contraseña: ");
+       if(contrseñain==contrseñaBase&&nombreUsuarioin==nombreUsuarioBase){
+            document.write("hola , Bienvenido")
+            break
+       }
+       if(i<(intentos-1)){
+            alert("Contraseña o usuario ivalidos")
+       }else{
+            alert("Alcanzaste el número máximo de intentos permitidos ")    
+       }
+  
+       
+
+    
+   }
+    
+
+
+</script>

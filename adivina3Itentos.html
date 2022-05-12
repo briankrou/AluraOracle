@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<h1>ADIVINA EL NUMERO </h1>
+<h4>tienes 3 intentos</h4>
+<script>
+    function saltoDeLinea(){
+        document.write("<br>".repeat(2))
+    }
+    function imprimir (mensaje){
+        document.write(mensaje);
+        saltoDeLinea();
+    }   
+
+    var selectedNumberComputer =  Math.round( Math.random()*10);
+    var NumberUser;
+    var contador=0;
+    var numeroDeIntentos=3;
+
+    for(var i=0;i<numeroDeIntentos;i++){
+     
+        contador=contador+1;
+        NumberUser= parseInt( prompt("Seleciona un número del 1 al 9: "));
+        imprimir("Intento numero :("+contador+") seleccionaste el  Numero "+NumberUser);
+        if(selectedNumberComputer==NumberUser){
+             
+            imprimir("Es el numero: "+selectedNumberComputer);
+            imprimir("GANASTE!! :)")
+            break;
+        }if(contador==numeroDeIntentos){
+                  imprimir("GAME OVER SIGUE INTENTANDO!!")
+        }
+        else{
+         
+                imprimir("Perdiste te queda "+(3-contador)+" intentos :´()");
+   
+        }
+   
+    }
+</script>

@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+
+<script>
+    function linea(){
+        document.write("<br>");
+    }
+    function imprimir(mensaje){
+        document.write(mensaje);
+        linea();
+    }
+    function masacorporal(peso,estaura){
+        var imc=(peso/(estatura*estatura));
+        imprimir("tu masa corporal es: "+imc)
+
+        if(imc<=18.5){
+            imprimir("<h1>tienes el peso bajo</h1>")
+        }
+        if(imc>18.5&&imc<24.9){
+            imprimir("<h1>tienes el peso normal</h1>")
+        }
+        if(imc>=25.0&&imc<29.9){
+            imprimir("<h1>tienes sobre peso</h1>")
+        }
+        if(imc>=30.0&&imc<34.9){
+            imprimir("<h1>Tienes obesidad clase 1</h1>")
+        }
+        if(imc>=35.0&&imc<39.9){
+            imprimir("<h1>Tienes obesidad clase 2</h1>")
+        }
+        if(imc>=40){
+            imprimir("<h1>Tienes obesidad clase 3</h1>")    
+        }
+    
+    
+    }   
+    
+    alert("vamos a caluclar su indice de masa corporal con la tabla de la OMS para mujeres y hombres");
+    var peso = prompt("¿Cual es su peso en kilos?");
+    var estatura=prompt("¿Cual es su estatura en m ? \nejemplo: 1.75" );
+    masacorporal(peso,estatura);
+
+
+
+
+
+</script>

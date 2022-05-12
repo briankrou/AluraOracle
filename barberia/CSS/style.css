@@ -1,0 +1,342 @@
+*{
+    text-decoration: none;
+}
+:root{
+    --color-principal: gray;
+    --secundario:#d6af00;
+    --secundario-2:#bd9b03;
+    --negro: #000;
+    --fuentePrincipal:'Montserrat', sans-serif;
+}
+body{
+    font-family: var(--fuentePrincipal);
+}
+.main-index{
+    background: linear-gradient(#fff ,gray);
+    padding-bottom: 2rem;
+}
+/*utilidades*/
+.alineacion{
+    width: 80%;
+    margin: auto;
+}
+.centrar{
+    text-align: center;
+}
+.tituloCentrado{
+    font-size: 25px;
+    padding: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.boton{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/*header*/
+.header{
+    background-color: #ccc;
+    height: auto;
+
+}
+.header li{
+    list-style: none;
+}
+.caja{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+@media screen and ( max-width:550px) {
+    .caja{
+        flex-direction: column;
+    }
+    .menu ul li a{
+        color:black;
+        margin: 1rem;
+        font-weight: bold;
+        font-size: 22px;
+        text-transform: uppercase;
+        line-height: 2.5rem;
+       
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .video{
+        max-width: 10rem;
+    }
+
+}
+
+
+
+.menu ul li a{
+    color:black;
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+   
+}
+.menu a:hover {
+    color: var(--secundario);
+}
+/*PRODUCTOS*/
+/*main*/
+    .contenedor{
+        display: flex;
+        padding-top: 2rem ;
+        flex-direction:row;
+        justify-content: center;
+    }
+
+    .subContenedor{
+        height: 27rem;
+        border: solid 2px #000;
+        margin: 1rem;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+.subContenedor:hover{
+    cursor:pointer;
+    border-color:var(--secundario);
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    
+}
+    .subContenedor div{
+        margin: 1rem;
+    }
+    .subContenedor h1{
+        font-size: 30px;
+    }
+    .precio{
+        padding-top: 1rem;
+        font-size: 28px;
+        text-align: center;
+    }
+    @media screen and ( max-width:550px) {
+        .subContenedor{
+            width: 20rem;
+        }
+
+        .contenedor img{
+            width: 80%;
+            margin-left: 1.5rem;
+       }
+        .contenedor{
+            flex-direction:column;
+            align-items: center;
+        }
+        .contenedor {
+             width: 100%;
+        }
+
+    }
+
+/*index*/
+
+.index-nosotros p{
+    font-size: larger;
+    padding: 1rem;
+}
+.index-nosotros .negrita{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.index-nosotros .cursiva{
+    font-style: oblique;
+}
+.section1{
+    display: flex;
+    padding: 1rem;
+}
+.servicios{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+@media screen and ( max-width:550px) {
+    .servicios{
+
+        flex-direction: column;
+    
+    }
+}
+.servicios div{
+    display: flex;
+    margin: auto;
+}
+
+.baner{
+    width: 100%;
+}
+.lista{
+    font-size: 20px;
+    line-height: 2rem;
+}
+.lista li::before{
+    content: "★";
+}
+
+.sericioimg{
+    opacity: 40%;
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem;
+}
+
+.sericioimg:hover{
+    box-shadow:0 0 9px 8px var(--negro);
+    transition: 0.3s;
+    opacity: 100%;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+
+.sobreBarberiaImg{
+    float:left;
+    text-align: center;
+    padding: 1rem;
+}
+
+.mapa{
+    margin-top: 1rem;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*----PODUCTOS----*/
+
+
+/*footer*/
+.footer{
+    width: 100%;
+    height: 20rem;
+    background-image:url(./imagenes/bg.jpg);
+}
+.footer div{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer img{
+    transform: scale(0.9);
+    padding-top: 2rem;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+.copy{
+    text-align: center;
+    color: #fff;
+}
+
+
+/*----------------PAGINA DE CONTACTO-----------------*/
+/*formulario*/
+.contacto-fon{
+    margin-left: 10%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
+
+form label{
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+/*tabla*/
+table{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+thead{
+    background-color: var(--secundario);
+    font-size: 18px;
+    font-weight: 800;
+}
+table td,th{
+    padding: 0.5rem; 
+    border: solid 1px var(--negro);
+}
+
+
+
+.botonEnviar{
+    position: relative;
+    background-color: #d6af00;
+    display: block;
+    padding: 6px;
+    right: 0;
+    margin-top:1rem ;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.botonEnviar:hover{
+    transform: scale(1.03);
+    transition: 0.2s;
+    background-color: var(--secundario-2);
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+}
+@media screen and ( max-width:550px) {
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .contacto-fon{
+        margin-left: 0;
+    }
+    table{
+        margin: 1rem auto;
+    }
+}

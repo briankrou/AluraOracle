@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Productos</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="caja alineacion">
+            <div class="logo">
+                <a href="./index.html"><img src="./CSS/imagenes/logo.png" alt="logo"></a>
+     
+             </div>
+             <nav class="menu">
+                 <ul>
+                     <li><a href="./index.html">HOME</a></li>
+                     <li><a href="./productos.html">PRODUCTOS</a></li>
+                     <li><a href="./contacto.html">contacto</a></li>
+                 </ul>
+             </nav>
+        </div>
+
+    </header>
+    <main class="contacto-fon">
+        <div class="alineacion">
+            <form>
+
+                        <label for="">Nombre y Apellido</label>
+                        <input class="inoutAncho" type="text" placeholder="Nombre apellido" id="nombre apellido" required>
+                 
+                        <label for="">Correo Electrónico</label>
+                        <input class="inoutAncho" type="email" placeholder="email@dominio.com" id="email"required>
+
+                        <label for="">Teléfono</label>
+                        <input class="inoutAncho" placeholder="(xx)xxx xxx" type="tel" id="telefono" required>
+  
+                        <label for="">Mensaje</label>
+                        <textarea class="inoutAncho" name="" id="" cols="30" rows="10" required></textarea>
+
+                        <div>
+                            <fieldset>
+                                <legend>¿Cómo le gustaria que lo contactemos?</legend>
+                                <label for=""><input type="radio" name="Tipo"> Email</label>
+                                <br>
+                                <label for=""> <input type="radio"name="Tipo">Teléfono</label>
+                                <br>
+                                <label for=""><input type="radio" name="Tipo">WhatsApp</label>
+                            </fieldset>
+                            <br>
+                         
+                            <legend>¿En cúal horario prefiere ser atendido?<legend>
+                                <select name="" id="">
+                                    <option value="">Mañana</option>
+                                    <option value="">Tarde</option>
+                                    <option value="">Noche</option>
+                                </select>
+                             <br>
+                             <br>
+                            <label for=""> <input type="checkbox">¿Le gustaria recibir novedades de la Barberia Alura?</label>
+                        </div>
+             
+                    <button class="boton botonEnviar inoutAncho"  type="submit">Enviar</BUtton>
+            </form>
+        </div>
+        <div class="alineacion">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Dia</th>
+                        <th>Horario</th>
+                    </tr> 
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08h-20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>08h-20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h-20h</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </main>
+        <footer class="footer">
+        <div>
+            <a href="./index.html"><img src="./CSS/imagenes/logo-blanco.png" alt="logo"></a>
+            
+        </div>
+        <p class="copy" >&copy Copyrigth Barber alura-2020</p>
+    </footer>
+        
+</body>
+</html>

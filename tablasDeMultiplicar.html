@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+    function saltoLinea(){
+
+        document.write("<br>")
+    }
+
+    function imprimir(mensaje){
+
+        document.write(mensaje);
+        saltoLinea();
+    }
+    function calcularTabla(n,mx){
+        imprimir("<h1>tabla del "+n+"</h1>")
+        for(var i=1;i<=mx;i++){
+            imprimir(n+"*"+i+" = "+(n*i))
+        }
+
+    }
+
+    alert("vamos a calcular las una tabla de multimplicar")
+    var tablaDel=prompt("que tabla quieres imprimir")
+    var maximo=prompt("asta que numero la quieres imprimir ,del uno al: ")
+    calcularTabla(tablaDel,maximo);
+    
+
+</script>

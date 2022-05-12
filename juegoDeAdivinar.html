@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<H1>Adivina!!</H1>
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+    }
+
+    function imprimir (mensaje){
+        document.write(mensaje)
+        saltarLinea();
+    }
+
+    var numeroAliatorio= Math.round(Math.random()*10);
+    var nuemoUsuario;
+
+    alert("Adivina el numeor");
+    nuemoUsuario =  parseInt(prompt("Elige un numero del 0 al 9"));
+
+
+    if(nuemoUsuario==numeroAliatorio){
+        imprimir("GANASTE!!")
+    }else{
+        imprimir("lo siento perdiste es el "+numeroAliatorio)
+}
+</script>

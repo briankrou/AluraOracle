@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+    var ensalada=[];
+    var fruta;
+    var cantidad=prompt("cuantas frutas vas a combinar: ")
+    var contador=0;
+    var esta=false;
+    while(contador<cantidad){
+        var fruta=prompt("la fruta "+(contador+1)+" es: ")
+        var existe=false;
+            for(var i=0;i<ensalada.length;i++){
+               if(fruta==ensalada[i]){
+                   alert("esta fruta ya esta")
+                    existe=true;
+                    break;
+               }
+            }
+            if(existe==false){
+                ensalada.push(fruta); 
+                contador=contador+1; 
+            }
+
+       
+        
+
+        
+        
+ 
+    }
+
+    document.write( "<h3>su ensalada de frutas: </h3>"+ensalada.toString())
+    
+
+    
+
+</script>
