@@ -67,6 +67,7 @@ textarea{
   
 
 .resultado{
+    
     width: 95%;
     margin: auto;
     background-color: #fff;
@@ -78,18 +79,42 @@ textarea{
     -o-border-radius: 32px;
     color: #0A3871;
 }
+
+
+#resultadoFinal{
+ display: none;
+}
+
+.imagen img{
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+}
+
+.imagen{ 
+    text-align: center;
+}
+.imagen h2,p{
+    margin: 0;
+}
+
 .resultado_contenedor{
-    padding-top: 0.5rem;
     width: 90%;
     margin: auto;
 }
 .resultado_contenedor-texto{
-
+    display: flex;
+    flex-direction: column;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 150%;
+}
+#copiar{
+    display: none;
 }
 .boton{
     font-size: 20px;
@@ -140,18 +165,31 @@ textarea{
   margin-bottom: 0.60rem;
   gap: 1rem;
 }
-@media (max-width: 500px) {
+
+@media (max-width: 600px) {
 
     .contenedorBotones{
         display: flex;
         flex-direction: column;
       }
+      .contenedorBotones button{
+        margin: auto;
+      }
       .boton{
           margin-left: 0;
           margin-right: 0;
       }
+      
+
 }
-@media (min-width: 808px) {
+@media (max-width:1000px) {
+    .imagen img{
+        display: none;
+    }
+
+}
+@media (min-width: 1000px) {
+    
     
         .contenedorPrincipal{
             display: grid;
@@ -176,6 +214,7 @@ textarea{
             grid-row: 3;
         }
         .resultado{
+            width: 28rem;
             margin-top: 1rem;
             display: grid;
             grid-template-rows: 1fr 10px;

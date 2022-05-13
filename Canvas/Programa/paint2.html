@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    canvas{
+        background-color: antiquewhite;
+    }
+</style>
+<body>
+    <canvas width="600" height="400"></canvas>
+    <input id="color" type="color">
+    <div>
+        <button>Circulo</button>
+    </div>
+</body>
+<script>
+  
+  var tablero=document.querySelector("canvas");
+    var color = document.querySelector("#color")
+    var pincel = tablero.getContext("2d");
+    function figura(event){
+
+    }
+    
+    function Circulo(x){
+
+        pincel.fillStyle= color.value;
+        pincel.beginPath();
+        pincel.arc(x,30,10,0,2*3.14)
+        pincel.fill()
+    }
+    function limpiarPantalla(){
+        pincel.clearRect(0,0,600,400)
+    }
+    function exibirMensaje(){
+        console.log("mensaje")
+    }
+    setInterval(Circulo(60),5000)
+    //Circulo(50,50,60)
+
+</script>
+</html>

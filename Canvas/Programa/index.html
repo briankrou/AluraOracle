@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <canvas width="600" height="400">
+
+    </canvas>
+</body>
+<script> 
+
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    pincel.fillStyle ="yellow"
+    pincel.fillRect(0,0,400,600)
+    pincel.fillStyle ="blue"
+    pincel.fillRect(0,200,400,100)
+    pincel.fillStyle ="red"
+    pincel.fillRect(0,300,400,100)
+
+    pincel.fillStyle ="green"
+    pincel.beginPath();
+    pincel.moveTo(350,200);
+    pincel.lineTo(200,100);
+    pincel.lineTo(50,200);
+    pincel.fill()
+        
+    pincel.fillStyle ="black"
+    pincel.beginPath();
+    pincel.arc(200,160,30,0,2*3.14)
+    pincel.fill()
+
+</script>
+</html>

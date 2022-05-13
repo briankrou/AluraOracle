@@ -20,30 +20,30 @@
             </div>
         </div>
         <div class="contedorTextoIn">
-            <textarea  name="mensaje" id="" cols="" rows="0" placeholder=" escriba aqui su texto"  ></textarea>
+            <textarea  name="mensaje" id="texaTraducir" cols="" rows="0" placeholder=" escriba aqui su texto :)"  ></textarea>
         </div>
 
         <div class="contenedorBotones">
-            <button class="boton boton_a">Encriptar</button>
-            <button class="boton ">Desencriptar</button>
+            <button class="boton boton_a" id="encriptar">Encriptar</button>
+            <button class="boton " id="desencriptar">Desencriptar</button>
         </div>
         <div class="resultado">
             <div class="resultado_contenedor">
                 <div class="resultado_contenedor-texto">
-                    <textarea  class="contedorTextoIn" name="" id="" cols="35%" rows="100%"  >
-                        
-                        placeholder
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.  
-                        Lorem ipsum dolor                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.  
-                        sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.  
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.  
-     
-                    </textarea>
-             
+
+                    <textarea  class="contedorTextoIn" name="mensaje final" id="resultadoFinal" cols="35%" rows="100%" ></textarea>
+                    <div class="imagen">
+                        <img style="margin: 2rem auto;" src="./IMG/Muñeco.png" alt="">
+                        <div>
+                            <h2>Ningún mensaje fue encontrado</h2>
+                            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                        </div>
                     </div>
+ 
+                </div>
               
                      <div class="resultado_contenedor-boton">
-                    <button class="boton boton_s"> Copiar</button>
+                    <button class="boton boton_s" id="copiar" onclick="copiarbt()"> Copiar</button>
                 </div>
             </div>
 
@@ -53,6 +53,7 @@
     </div>
 
 </main>
+<script src="./JS/Script.js"></script>
 </body> 
 
 </html>

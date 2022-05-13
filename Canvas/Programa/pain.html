@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    canvas{
+        background-color: rgba(128, 128, 128, 0.904);
+        stroke: 15px;
+        
+    }
+    #herramientas{
+        background-color: gray;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #grosor{
+        margin: 1rem;
+    }
+    dialog{
+        padding: 0;
+        position: absolute;
+    }
+    
+    #color{
+        margin: auto;
+
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <canvas width="600" height="500"></canvas>
+        <dialog  open="">
+            <div id="herramientas">
+                <input type="range" id="grosor">
+                <input type="color" id="color">
+            </div>
+        </dialog>
+
+    </div>
+
+
+</body>
+<script>
+    document.querySelector("canvas");
+    window,moveBy(50,-60)
+
+</script>
+</html>

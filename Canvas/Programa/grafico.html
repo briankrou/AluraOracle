@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="600" height="600"></canvas>
+</body>
+<script>
+    var serie2009 = [6, 47, 41, 3, 3];
+    var serie2019 = [81, 9, 3, 3, 4];
+    var tablero = document.querySelector("canvas");
+    var pincel = tablero.getContext("2d");
+    pincel.fillStyle="gainsboro"
+    pincel.fillRect(0,0,600,500);
+
+    function grafico(Array,inicio,nombre){
+        var colores=["blue","green","yellow","red","gray","orange"];
+        i=0;
+        n=50;
+        pincel.font="20px arial";
+        pincel.fillStyle="blue"
+        pincel.fillText(nombre,inicio+25,30);
+        while(i<Array.length){
+            d=Array[i]
+            pincel.fillStyle = colores[i];
+            pincel.fillRect(inicio,n,100,d+20);
+            n=n+20+Array[i]
+            pincel.font= "15px Georgia"
+            pincel.fillText("----"+Array[i]+"%",inicio+105,n-5)
+            i=i+1
+    }
+    }
+
+    grafico(serie2009,100,"2009")
+    grafico(serie2019,300,"2019")
+
+</script>
+</html>
